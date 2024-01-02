@@ -1,0 +1,74 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f7f7f7;
+
+}
+
+.container{
+    padding: 5px;
+    border-radius: 10px;
+    border: 1px solid #000;
+    width: 250px;
+    background-color: #e0e0e0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.display>input{
+    height: 80px;
+    width: 240px;
+    border-radius: 10px;
+    border: 1px solid black;
+    background-color: white;
+    text-align: right;
+    padding: 5px;
+    font-size: 30px;
+    background-color: #ffffff; /* White background for the display */
+  color: #333333; /* Dark text color for the display */
+}
+.row{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex: 4;
+    margin: 9px;
+}
+
+.row>input{
+    font-size: 20px;
+    width: 42px;
+    height: 42px;
+    border-radius: 20px;
+    border: none;
+    margin: 5px;
+    cursor: pointer;
+    background-color: #3498db; /* Blue color for buttons */
+    color: #ffffff;
+}
+
+.row>input:nth-child(1),
+.row>input:nth-child(2),
+.row>input:nth-child(3),
+.row>input:nth-child(4),
+.row>input:nth-child(8),
+.row>input:nth-child(12),
+.row>input:nth-child(16)
+{
+    background-color: #e74c3c;
+}
+
+.row>input:nth-child(20){
+    background-color: #2ecc71;
+}
+
+.row>input:hover{
+    background-color: #2980b9;
+}
