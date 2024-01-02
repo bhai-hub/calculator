@@ -21,7 +21,7 @@ const display = document.querySelector(".display>input")
 buttons.forEach(btn =>{
     btn.addEventListener('click', ()=>{
         if(btn.value == "C"){
-            display.value = " ";
+            display.value = "0";
         }
         else if(btn.value == "CE"){
             display.value = display.value.toString().slice(0, -1)
